@@ -1,12 +1,12 @@
 # Simple-Game
 Simple game with HTML, CSS and vanilla Javascript 
-This game is for computer only, you can play it with keyboard
+This game is for computer only, you can play it with keyboard<br/>
 
-W|Up Arrow ==> Up
-A|Left Arrow ==> left
-D|Right Arrow ==> right
-S|Down Arrow ==> down
+W|Up Arrow ==> Up <br/>
+A|Left Arrow ==> left<br/>
+D|Right Arrow ==> right<br/>
+S|Down Arrow ==> down<br/>
 
-you have to get high points
+you have to get high points<br/>
 
-enjoy!!
+<strong>enjoy!!</strong>
