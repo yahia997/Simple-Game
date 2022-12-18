@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    user-select: none;
+}
+:root {
+    --yellow: #f2b137;
+    --dark-yellow: #cc8b13;
+    --lite-yellow: #ffc860;
+    --cyan: #31c3bd;
+    --dark-cyan: #118c87;
+    --liet-cyan: #65e9e4;
+    --gray: #a8bfc9;
+    --dark-blue: #10212a;
+    --blue: #1a2a33;
+    --lite-blue: #1f3641;
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.player {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    z-index: 9999;
+}
+.shield {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-right: solid white 5px;
+    transition: all 0.2s ease;
+    z-index: 10000;
+}
+.fire {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transition: all 0.4s ease;
+    z-index: 999;
+}
+.top {
+    top: 0%;
+    animation-name: t;
+    animation-timing-function: linear;
+}
+@keyframes t {
+    100% {
+        top: calc(50% - 10px);
+    }
+}
+.bottom {
+    bottom: 0%;
+    animation-name: b;
+    animation-timing-function: linear;
+}
+@keyframes b {
+    100% {
+        bottom: calc(50% - 10px);
+    }
+}
+.right {
+    right: 0%;
+    animation-name: r;
+    animation-timing-function: linear;
+}
+@keyframes r {
+    100% {
+        right: calc(50% - 10px);
+    }
+}
+.left {
+    left: 0%;
+    animation-name: l;
+    animation-timing-function: linear;
+}
+@keyframes l {
+    100% {
+        left: calc(50% - 10px);
+    }
+}
+.points {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    padding: 20px;
+    z-index: 9999;
+}
+.points p {
+    font-size: 24px;
+    color: white;
+    width: fit-content;
+    text-align: center;
+}
+.hide {
+    background-color: black;
+    position: absolute;
+    z-index: 9999;
+}
+.hide-top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+}
+.hide-left {
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+}
+.hide-right {
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+}
+.hide-bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+}
+.box {
+    position: absolute;
+    z-index: 9999;
+    width: 60%;
+    height: 60%;
+    border: solid white 3px;
+    background-color: transparent;
+    left: calc(50% - 30%);
+    top: calc(50% - 30%);
+}
